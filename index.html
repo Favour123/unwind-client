@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Unwind Africa - Relaxation & Self-Care</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+      <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet" />
+      <script src="js/slider.js" defer></script>
+      <link rel="stylesheet" href="styles/home.css" />
+   </head>
+   <body class="text-white">
+      <!-- Desktop Navbar -->
+      <nav id="topper" class="overflow:hidden fixed w-full z-50 bg-black/60 backdrop-blur-sm transition-all duration-300">
+         <div class="container mx-auto px-4 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+               <!-- Mobile Menu Button -->
+               <div class="md:hidden">
+                  <button id="mobile-menu-button" class="text-white p-2">
+                     <i class="fas fa-bars text-xl"></i>
+                  </button>
+               </div>
+
+               <!-- Desktop Navigation -->
+               <div class="hidden md:flex space-x-8">
+                  <a href="#" class="navbar-link text-white hover:text-yellow-400">About Us</a>
+                  <a href="#" class="navbar-link text-white hover:text-yellow-400">Packages</a>
+                  <a href="#" class="navbar-link text-white hover:text-yellow-400">Services</a>
+                  <a href="#" class="navbar-link text-white hover:text-yellow-400">Blog</a>
+               </div>
+
+               <!-- Logo - Centered on mobile -->
+               <div class="flex items-center">
+                  <a href="/index.html" class="flex items-center">
+                     <img src="assets/images/UAL LOGO TRNS.png" class="h-12 md:h-12 w-auto object-contain" alt="Unwind Africa Logo" />
+                  </a>
+               </div>
+
+               <!-- Social Links - Hidden on mobile -->
+               <div class="hidden md:flex space-x-4">
+                  <a href="#" class="p-2 text-white hover:text-yellow-400">
+                     <i class="fab fa-facebook text-xl"></i>
+                  </a>
+                  <a href="#" class="p-2 text-white hover:text-yellow-400">
+                     <i class="fab fa-instagram text-xl"></i>
+                  </a>
+                  <a href="#" class="p-2 text-white hover:text-yellow-400">
+                     <i class="fab fa-twitter text-xl"></i>
+                  </a>
+               </div>
+
+               <!-- Contact Button -->
+               <button class="hidden md:block bg-yellow-500 hover:bg-yellow-400 text-black px-6 py-2 rounded-full font-bold">Contact us</button>
+            </div>
+
+            <!-- Mobile Menu (Hidden by default) -->
+            <div id="mobile-menu" class="hidden md:hidden bg-black/95 py-4">
+               <div class="flex flex-col space-y-4 px-4">
+                  <a href="#" class="text-white hover:text-yellow-400">About Us</a>
+                  <a href="#" class="text-white hover:text-yellow-400">Packages</a>
+                  <a href="#" class="text-white hover:text-yellow-400">Services</a>
+                  <a href="#" class="text-white hover:text-yellow-400">Blog</a>
+                  <button class="bg-yellow-500 hover:bg-yellow-400 text-black px-6 py-2 rounded-full font-bold w-full">Contact us</button>
+               </div>
+            </div>
+         </div>
+      </nav>
+
+      <section class="hero-section h-screen flex items-center flex-end">
+         <!-- Hero Background Slides -->
+         <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3')"></div>
+         <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3')"></div>
+         <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1512552288940-3a300922a275?ixlib=rb-4.0.3')"></div>
+
+         <!-- Hero Content -->
+         <div class="container mx-auto px-6 relative z-10">
+            <div class="max-w-4xl">
+               <h1 class="text-6xl md:text-8xl font-bold text-white mb-4 text-shadow">
+                  <span class="text-3xl md:text-4xl pl-2 block mb-2">Welcome At</span>
+                  <span class="text-yellow-300 tracking-wide">UNWIND</span>
+                  <span class="tracking-wide"> AFRICA</span>
+               </h1>
+               <p class="text-lg md:text-xl text-white text-shadow max-w-2xl mb-8">
+                  'We believe that relaxation and self-care<br />
+                  are essential to living a balanced life'
+               </p>
+
+               <!-- Hero Slider Navigation Dots -->
+               <!-- Replace the existing hero content dots with this -->
+               <div class="absolute right-5 top-[54%] md:right-8 md:top-1/2 transform -translate-y-1/2 flex flex-col space-y-4">
+                  <button class="slider-dot w-6 h-10 overflow-hidden border-2 rounded-lg border-white/50 transition-all duration-200">
+                     <img src="https://images.unsplash.com/photo-1596178065887-1198b6148b2b?ixlib=rb-4.0.3" alt="Slide 1" class="w-full h-full object-cover opacity-50 hover:opacity-100" />
+                  </button>
+                  <button class="slider-dot w-6 h-10 overflow-hidden border-2 rounded-lg border-white/50 transition-all duration-200">
+                     <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3" alt="Slide 2" class="w-full h-full object-cover opacity-50 hover:opacity-100" />
+                  </button>
+                  <button class="slider-dot w-6 h-10 overflow-hidden border-2 rounded-lg border-white/50 transition-all duration-200">
+                     <img src="https://images.unsplash.com/photo-1512552288940-3a300922a275?ixlib=rb-4.0.3" alt="Slide 3" class="w-full h-full object-cover opacity-50 hover:opacity-100" />
+                  </button>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="bg-[#E0F7FF] min-h-screen flex items-center py-12 md:py-20">
+   <div class="container mx-auto px-4 md:px-6">
+      <div class="flex flex-col items-center justify-center">
+         <div class="text-center w-full max-w-[1400px]">
+            <!-- Main Heading -->
+            <h2 class="text-black text-4xl sm:text-5xl md:text-7xl lg:text-[120px] xl:text-[150px] 
+                       font-bold leading-tight tracking-wide mb-6 md:mb-8"
+                style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2)">
+               The Power
+               <br class="hidden sm:block" />
+               OF
+               <span class="inline-block w-full max-w-[620px] my-4 md:my-6">
+                  <img
+                     src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3"
+                     alt="Relaxation"
+                     class="w-full h-16 sm:h-20 md:h-24 lg:h-28 xl:h-32 object-cover rounded-lg shadow-lg"
+                  />
+               </span>
+               <br class="hidden sm:block" />
+               Relaxation
+            </h2>
+
+            <!-- Subtext -->
+            <p class="text-gray-700 text-base sm:text-lg md:text-xl lg:text-2xl 
+                      max-w-[90%] sm:max-w-[80%] md:max-w-4xl mx-auto px-4 
+                      leading-relaxed"
+               style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1)">
+               Our vision is to empower individuals, couples, families, and organizations 
+               to prioritize their well-being, fostering a culture of wellness and balance.
+            </p>
+         </div>
+      </div>
+   </div>
+</section>
+
+      <!-- Unforgettable Experiences Section -->
+      <section class="bg-[#E0F7FF] py-12 md:py-20">
+   <div class="container mx-auto px-4 md:px-6">
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-8 md:gap-12">
+         <!-- Image Container -->
+         <div class="w-full md:w-1/2">
+            <img 
+               src="https://images.unsplash.com/photo-1517457373958-b7bdd4587205?ixlib=rb-4.0.3" 
+               alt="Social gathering" 
+               class="rounded-lg w-full h-[300px] md:h-[400px] object-cover shadow-lg"
+            />
+         </div>
+
+         <!-- Content Container -->
+         <div class="w-full md:w-1/2 text-center md:text-left">
+            <h2 class="text-[#1B4965] text-3xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4 md:mb-6">
+               Unforgettable relaxation and socialization experiences accessible to all.
+            </h2>
+            <p class="text-gray-700 text-base md:text-lg leading-relaxed mb-6 md:mb-8">
+               At Unwind Africa, our mission is to provide accessible, affordable and unforgettable relaxation 
+               and socialization experiences, promoting work-life balance, community building and mental well-being. 
+               We achieve this by offering flexible savings plans, exciting voucher opportunities and exceptional 
+               events, ensuring everyone can unwind, recharge and connect with others.
+            </p>
+            <a href="#" 
+               class="inline-block bg-[#1B9AAA] text-white px-6 md:px-8 py-3 rounded-full font-semibold 
+                      hover:bg-[#167885] transition-colors duration-300 shadow-md hover:shadow-lg">
+               Learn More
+            </a>
+         </div>
+      </div>
+   </div>
+</section>
+
+      <!-- Why Choose Us Section -->
+      <section class="bg-[#E0F7FF] py-20">
+         <div class="container mx-auto px-6">
+            <div class="text-center mb-24">
+               <h2 class="text-4xl md:text-5xl font-bold">
+                  <span class="text-[#2D1810]">Why Choose </span>
+                  <span class="text-[#2E7D32]">Unwind Africa</span>
+                  <span class="text-[#2D1810]">?</span>
+               </h2>
+               <p class="text-gray-700 text-lg max-w-3xl mx-auto mt-4">
+                  Because relaxation isn't a luxury — it's your right. We blend wellness, celebration, and seamless planning into unforgettable moments made just for you.
+               </p>
+            </div>
+
+            <div class="flex flex-col md:flex-row gap-12 mt-20">
+               <!-- Card 1 -->
+               <div class="relative flex-1 pt-12">
+                  <!-- Icon above card -->
+                  <div class="absolute -top-6 left-1/2 transform -translate-x-1/2">
+                     <div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center">
+                        <svg class="w-12 h-12" viewBox="0 0 24 24" fill="none">
+                           <path d="M12 15a3 3 0 100-6 3 3 0 000 6z" fill="#2196F3" />
+                           <path d="M18.7 16.7a9 9 0 10-13.4 0l.7.7a8 8 0 0012 0l.7-.7z" fill="#2196F3" />
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="bg-[#2196F3] rounded-3xl p-8 text-white">
+                     <h3 class="text-2xl font-bold mb-4">Personalized Planning</h3>
+                     <p class="text-white/90">
+                        Every journey with us is created to match your rhythm, your interests, and your lifestyle. From private retreats to custom itineraries, we craft experiences as unique as you
+                        are.
+                     </p>
+                  </div>
+               </div>
+
+               <!-- Card 2 -->
+               <div class="relative flex-1 pt-12">
+                  <!-- Icon above card -->
+                  <div class="absolute -top-6 left-1/2 transform -translate-x-1/2">
+                     <div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center">
+                        <svg class="w-12 h-12" viewBox="0 0 24 24" fill="none">
+                           <path d="M20 10c0 4.4-8 12-8 12s-8-7.6-8-12a8 8 0 1116 0z" fill="#2E7D32" />
+                           <path d="M12 12a2 2 0 100-4 2 2 0 000 4z" fill="white" />
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="bg-[#2E7D32] rounded-3xl p-8 text-white">
+                     <h3 class="text-2xl font-bold mb-4">Wellness-Centered</h3>
+                     <p class="text-white/90">
+                        Our approach goes beyond relaxation — it's about celebration. We prioritize your physical, emotional, and mental well-being with immersive wellness practices rooted in African
+                        traditions and tranquility.
+                     </p>
+                  </div>
+               </div>
+
+               <!-- Card 3 -->
+               <div class="relative flex-1 pt-12">
+                  <!-- Icon above card -->
+                  <div class="absolute -top-6 left-1/2 transform -translate-x-1/2">
+                     <div class="w-20 h-20 bg-white rounded-full shadow-lg flex items-center justify-center">
+                        <svg class="w-12 h-12" viewBox="0 0 24 24" fill="none">
+                           <path d="M12 2l8 4-8 4-8-4 8-4z" fill="#0D47A1" />
+                           <path d="M20 10l-8 4-8-4M20 14l-8 4-8-4" stroke="#0D47A1" stroke-width="2" />
+                        </svg>
+                     </div>
+                  </div>
+                  <div class="bg-[#0D47A1] rounded-3xl p-8 text-white">
+                     <h3 class="text-2xl font-bold mb-4">Seamless Luxury</h3>
+                     <p class="text-white/90">
+                        Enjoy effortless elegance, from handpicked accommodations to first-class service. Every detail is thoughtfully designed to deliver luxury that feels natural, not forced.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Team Quote Section -->
+      <section class="bg-[#E0F7FF] py-20">
+         <div class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto text-center">
+               <h2 class="text-4xl md:text-5xl font-bold mb-8">
+                  <span class="text-black">We specialize in crafting </span>
+                  <span class="text-gray-600"
+                     >unique getaways and celebrations — from private jet adventures to tranquil me-time retreats. Whether it's love, connection, or rejuvenation you're seeking, our experiences are
+                     tailored to your story.</span
+                  >
+               </h2>
+               <p class="text-gray-600 text-2xl md:text-3xl leading-relaxed mb-8"></p>
+               <div class="mt-12">
+                  <p class="text-gray-800 text-2xl signature">- Unwind Africa's Team</p>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- Journal Section -->
+         <section class="bg-white py-12 md:py-20">
+   <div class="container mx-auto px-4 md:px-6">
+      <!-- Header -->
+      <div class="flex flex-col sm:flex-row justify-between items-center mb-8 md:mb-12">
+         <h2 class="text-3xl sm:text-4xl md:text-5xl text-gray-600 font-light tracking-wide mb-4 sm:mb-0">OUR JOURNAL</h2>
+         <a href="#" class="text-blue-500 hover:text-blue-600 transition-colors duration-200">VIEW ALL</a>
+      </div>
+
+      <!-- Journal Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+         <!-- Article 1 - Text Only -->
+         <div class="border border-gray-200 p-4 md:p-6 hover:shadow-lg transition-shadow duration-300">
+            <h3 class="text-xl md:text-2xl font-medium mb-3 md:mb-4">Tour De France</h3>
+            <p class="text-gray-600 mb-4 md:mb-6 text-sm leading-relaxed">
+               According to some experts, all approaches to the creation of the point of the optimization scenario should keep its influence over The Extension of Mesmerizing Development.
+            </p>
+            <a href="#" class="inline-flex items-center text-black hover:text-gray-700 transition-colors duration-200">
+               Read More →
+            </a>
+         </div>
+
+         <!-- Article 2 - Empty Space -->
+         <div class="border border-gray-200 hidden md:block"></div>
+
+         <!-- Article 3 - Image with Overlay -->
+         <div class="relative h-[300px] md:h-full">
+            <img 
+               src="https://images.unsplash.com/photo-1523554888454-84137e72c3ce?ixlib=rb-4.0.3" 
+               alt="Travel Essentials" 
+               class="w-full h-full object-cover"
+            />
+            <div class="absolute inset-0 bg-black/40 p-4 md:p-6 flex items-center">
+               <div class="text-white">
+                  <h3 class="text-xl md:text-2xl font-medium mb-3 md:mb-4">Tour De France</h3>
+                  <p class="text-sm mb-4 md:mb-6">
+                     Simplistically, a number of brand new approaches has been tested during the the improvement of the effective time management.
+                  </p>
+                  <a href="#" class="inline-flex items-center text-white hover:text-gray-200 transition-colors duration-200">
+                     Read More →
+                  </a>
+               </div>
+            </div>
+         </div>
+
+         <!-- Article 4 - Wide Article -->
+         <div class="col-span-1 md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+            <div class="h-[300px] md:h-full">
+               <img 
+                  src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3" 
+                  alt="Luxury Vehicle" 
+                  class="w-full h-full object-cover"
+               />
+            </div>
+            <div class="flex items-center p-4 md:p-0">
+               <div>
+                  <h3 class="text-xl md:text-2xl font-medium mb-3 md:mb-4">Tour De France</h3>
+                  <p class="text-gray-600 mb-4 md:mb-6 text-sm leading-relaxed">
+                     Let's not forget that a broad understanding of the essence will require a vast knowledge. The some of the individual elements gives less satisfactory results.
+                  </p>
+                  <a href="#" class="inline-flex items-center text-black hover:text-gray-700 transition-colors duration-200">
+                     Read More →
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+      <!-- Footer -->
+         <footer class="bg-gradient-to-b from-[#03E1C6] to-[#F2AF4E] text-white border border-[#808080] shadow-[0px_4px_4px_rgba(64,0,0,0.25)]">
+   <div class="container mx-auto px-6 py-16">
+      <!-- Footer Content Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+         <!-- Logo Column -->
+         <div class="flex justify-center md:justify-start">
+            <img src="assets/images/UAL LOGO TRNS.png" class="h-14 md:h-16 w-auto object-contain" alt="Unwind Africa Logo" />
+         </div>
+
+         <!-- Important Links -->
+         <div class="text-center md:text-left">
+            <h4 class="text-xl mb-6 font-light">Links</h4>
+            <nav>
+               <ul class="space-y-3">
+                  <li><a href="#about" class="hover:text-gray-300 transition-colors duration-200">About-Us</a></li>
+                  <li><a href="#packages" class="hover:text-gray-300 transition-colors duration-200">Packages</a></li>
+                  <li><a href="#services" class="hover:text-gray-300 transition-colors duration-200">Services</a></li>
+                  <li><a href="#blog" class="hover:text-gray-300 transition-colors duration-200">Blog</a></li>
+               </ul>
+            </nav>
+         </div>
+
+         <!-- Follow Us -->
+         <div class="text-center md:text-left">
+            <h4 class="text-xl mb-6 font-light">Follow Us</h4>
+            <ul class="space-y-3">
+               <li>
+                  <a href="#" class="flex items-center justify-center md:justify-start gap-3 hover:text-gray-300 transition-colors duration-200">
+                     <i class="fab fa-facebook-f w-5 text-center"></i>
+                     <span>unwindafrica</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="flex items-center justify-center md:justify-start gap-3 hover:text-gray-300 transition-colors duration-200">
+                     <i class="fab fa-instagram w-5 text-center"></i>
+                     <span>unwindafrica</span>
+                  </a>
+               </li>
+               <li>
+                  <a href="#" class="flex items-center justify-center md:justify-start gap-3 hover:text-gray-300 transition-colors duration-200">
+                     <i class="fab fa-tiktok w-5 text-center"></i>
+                     <span>unwindafrica</span>
+                  </a>
+               </li>
+            </ul>
+         </div>
+
+         <!-- Contact Us -->
+         <div class="text-center md:text-left">
+            <h4 class="text-xl mb-6 font-light">Contact Us</h4>
+            <ul class="space-y-3">
+               <li>
+                  <a href="mailto:unwindafrica@gmail.com" class="hover:text-gray-300 transition-colors duration-200">
+                     unwindafrica@gmail.com
+                  </a>
+               </li>
+               <li>
+                  <a href="tel:+2348034567891" class="hover:text-gray-300 transition-colors duration-200">
+                     +234-08034567891
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <!-- Copyright Bar -->
+      <div class="border-t border-blue-900/50 mt-16 pt-8">
+         <div class="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+            <p class="text-sm text-gray-300">©<span id="year"></span> Unwind Africa. All Rights Reserved</p>
+            <a href="#terms" class="text-sm text-gray-300 mt-4 md:mt-0">Terms and conditions</a>
+         </div>
+      </div>
+   </div>
+</footer>
+   </body>
+   <script>
+      // Get the navbar element
+      const navbar = document.getElementById("topper");
+
+      // Function to handle scroll events
+      function handleScroll() {
+         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+         const navbarLinks = document.querySelectorAll(".navbar-link");
+
+         if (scrollTop > 20) {
+            // When scrolled past 20px, make navbar transparent
+            navbar.classList.remove("bg-black/80");
+            navbar.classList.add("bg-transparent");
+
+            navbarLinks.forEach((link) => {
+               link.classList.remove("text-white");
+               link.classList.add("text-black");
+            });
+         } else {
+            // When at top (0-20px), make navbar black
+            navbar.classList.remove("bg-transparent");
+            navbar.classList.add("bg-black/80");
+            navbarLinks.forEach((link) => {
+               link.classList.remove("text-black");
+               link.classList.add("text-white");
+            });
+         }
+      }
+
+      // Add scroll event listener
+      window.addEventListener("scroll", handleScroll);
+
+      // Call once on page load to set initial state
+      handleScroll();
+      // Add this to your existing script section
+      document.getElementById("mobile-menu-button").addEventListener("click", function () {
+         const mobileMenu = document.getElementById("mobile-menu");
+         mobileMenu.classList.toggle("hidden");
+      });
+
+      // Close mobile menu when clicking outside
+      document.addEventListener("click", function (event) {
+         const mobileMenu = document.getElementById("mobile-menu");
+         const mobileMenuButton = document.getElementById("mobile-menu-button");
+
+         if (!mobileMenuButton.contains(event.target) && !mobileMenu.contains(event.target)) {
+            mobileMenu.classList.add("hidden");
+         }
+      });
+      // Update the year in the footer dynamically
+   document.addEventListener("DOMContentLoaded", () => {
+   const year = new Date().getFullYear();
+   document.getElementById("year").textContent = year;
+   });
+
+   </script>
+</html>
